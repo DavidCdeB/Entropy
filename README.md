@@ -11,7 +11,7 @@ As has been discussed previously, the frecuencies vary with the volume according
 
 The workflow is very simple:
 
-1) The file `./done_modes_sorted.dat` contains the parameters for each normal mode:
+**1)** The file `./done_modes_sorted.dat` contains the parameters for each normal mode:
 
 ```
 # c               d                f                   mode
@@ -23,9 +23,9 @@ The workflow is very simple:
 ....
 ```
 
-1) The function `nu` with input arguments `V` (Volume), `c`, `d` and `f` parameters
+**2)** The function `nu` with input arguments `V` (Volume), `c`, `d` and `f` parameters
 
-2) The function `P_sq` with input arguments `V` (Volume), `T` (Temperature), and  `c`, `d` and `f` parameters.
+**3)** The function `P_sq` with input arguments `V` (Volume), `T` (Temperature), and  `c`, `d` and `f` parameters.
 
 Thus:
 
@@ -50,4 +50,28 @@ for V in Vs:
 print Gs
 ```
 
+(`conv_fac_nu` is just a conversion factor)
 
+When computing this summation for calcite I:
+
+`python I.py`
+
+, it works OK. 
+
+The interesting thing is that when computing this summation for calcite II:
+
+`python II.py`
+
+, there is a problem with the `log`.
+
+`II.py:35: RuntimeWarning: invalid value encountered in log`
+
+In this repository you can find:
+
+```
+done_modes_sorted_I.dat
+done_modes_sorted_II.dat
+I.py
+II.py
+
+```
