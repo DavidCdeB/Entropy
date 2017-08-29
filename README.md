@@ -13,13 +13,13 @@ The workflow is very simple:
 
 1) The file `./done_modes_sorted.dat` contains the parameters for each normal mode:
 
-`
+```
 # c               d                f                   mode
 0.0685265337707 -30.0101460555174 3356.3806811965342 1.0000000000000
 0.1422518723231 -65.3036881624374 7575.6223344565860 2.0000000000000
 0.0071781843348 -5.8386124006698 1050.9676820938350 3.0000000000000
 0.1262549911900 -58.3147083487940 6834.6861875675886 4.0000000000000
-`
+```
 
 1) The function `nu` with input arguments `V` (Volume), `c`, `d` and `f` parameters
 
@@ -27,7 +27,8 @@ The workflow is very simple:
 
 Thus:
 
-`def nu(V, c, d, f):
+```
+def nu(V, c, d, f):
    return (c*V**2 + d*V + f) * conv_fac_nu
 
 def S_sq(V, T, c, d, f):
@@ -44,6 +45,7 @@ for V in Vs:
 
         Gs.append(aux)
 
-print Gs`
+print Gs
+```
 
 
