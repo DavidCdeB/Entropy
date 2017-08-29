@@ -25,7 +25,7 @@ The workflow is very simple:
 
 **2)** The function `nu` with input arguments `V` (Volume), `c`, `d` and `f` parameters
 
-**3)** The function `P_sq` with input arguments `V` (Volume), `T` (Temperature), and  `c`, `d` and `f` parameters.
+**3)** The function `S_sq` with input arguments `V` (Volume), `T` (Temperature), and  `c`, `d` and `f` parameters.
 
 Thus:
 
