@@ -54,15 +54,15 @@ print Gs
 
 When computing this summation for calcite I:
 
-`python I.py`
+`python I.py`,
 
-, it works OK. 
+ it works OK. 
 
 The interesting thing is that when computing this summation for calcite II:
 
-`python II.py`
+`python II.py`,
 
-, there is a problem with the `log`.
+there is a problem with the `log`:
 
 `II.py:35: RuntimeWarning: invalid value encountered in log`
 
