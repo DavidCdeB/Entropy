@@ -6,7 +6,7 @@ where:
 
 ![Data flow](https://github.com/DavidCdeB/Entropy/blob/master/ET.png)
 
-The `ln` part can present some problems: If there is a negative frequency, then the exponential will be greater than 1, so that we will have `ln(negative number)`.
+The `ln` part can present some problems: If there is a negative frequency, then the exponential in the 1st equation will be greater than 1, so that we will have `ln(negative number)`.
 
 In a QHA framework, there might be certain volumes for which there are negative phonons at finte k-points. These negative phonon modes represent transition states to phase transitions. In many cases the energy difference between the broken symmetry strucutre and the "parent" structure is so low, that is below the DFT error bar. In these cases we shall not consider a phase transition, and we can compute the entropy of that volume, excluding this particular negative phonon mode from the summation.
 
