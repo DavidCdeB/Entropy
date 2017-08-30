@@ -27,7 +27,7 @@ The output states that the entropy has been calculated over 3597 modes:
 ```
 THERMODYNAMICAL PROPERTIES ARE CALCULATED AS A SUM OVER  3597 MODES
 ```
-The attached python script, calculates the entropy for each phonon mode in a cumulative way, i.e. `S[i] = S[i] + S[i-1]` 
+The attached python script in this repository, calculates the entropy for each phonon mode in a cumulative way, i.e. `S[i] = S[i] + S[i-1]` 
 
 The file `nu_S.dat` will be generated, in which it can be easily seen that when reaching a negative phonon mode, the entropy is `nan`:
 
